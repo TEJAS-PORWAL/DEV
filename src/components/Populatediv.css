@@ -1,0 +1,79 @@
+
+
+.Populate{
+    /* border: 1px solid red; */
+    display: flex;
+    width: 100%;
+    min-width: 360px ;
+    justify-content: center;
+    flex-direction: column;
+    background: url('../images/BG-roadmap.png');
+    background-size: auto;
+    background-repeat: no-repeat;
+    padding: 15px;
+    display: none;
+}
+
+.Populate .Populatediv-container {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    min-width: 320px;
+    width: 320px;
+    height: 350px;
+    min-height: 320px;
+    overflow-x: scroll;
+    margin: 10px auto;
+    scroll-behavior: smooth;
+    background-color: inherit;
+    scroll-snap-type: x mandatory;
+
+}
+
+.Populatediv-container::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.Populatediv-container .quarter-div {
+    /* border: 1px solid yellow; */
+    display: inline-block;
+    padding: 10px ;
+    min-width: 300px;
+    margin: 10px;
+    font-size: 85%;
+    color: aliceblue;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.423);
+    block-size: 300px;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+    cursor: grab;
+}
+
+.Populatediv-container .quarter-div h2{
+    margin-top: -5px;
+}
+
+.Populatediv-container .quarter-div ul li {
+    list-style: none;
+}
+
+.Populatediv-container+div {
+    /* border: 1px solid rebeccapurple; */
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.scroll-btn {
+    background-color:#4d8a0f;
+    color: #80ff00;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    margin: 0 10px;
+}
+

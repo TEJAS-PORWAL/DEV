@@ -1,0 +1,36 @@
+
+.about
+{
+    width: 100%;
+    background-color: black;
+    font-size: 1.3rem;
+    min-width: 360px ;
+    padding: 5% ;
+    text-align: justify;
+    color: rgb(221, 221, 221);
+}
+
+.about .info
+{
+    font-weight:bolder;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    text-decoration-line:underline ;
+    margin-bottom: 30px ;
+}
+
+.about .info2
+{
+    font-family: 'Times New Roman', Times, serif; 
+    text-align: center;  
+   
+
+}
+
+
+
+@media only screen and (max-width: 710px){
+    .about{
+        font-size: 1rem;
+    }
+}

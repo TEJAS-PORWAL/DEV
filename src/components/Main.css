@@ -1,0 +1,70 @@
+main {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    min-width: 360px;
+    width: 100%;
+    animation: none;
+}
+
+
+
+.about {
+    width: 100%;
+    background-color: rgb(210, 227, 210);
+    font-size: 1.3rem;
+    padding: 5%;
+    box-shadow: 0px -25px 45px rgb(0, 0, 0);
+}
+
+.icon {
+    /* background-color: aqua; */
+    width: 50px;
+    height: 50px;
+    /* border: 1px solid red; */
+    border-radius: 50%;
+    position: relative;
+    top: 50%;
+    z-index: 4;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.icon div{
+    width: 23px;
+    height: 23px;
+    /* background: rgb(192, 148, 148); */
+    transform: rotate(45deg);
+    border-bottom: 5px solid #59ab07;
+    border-right: 5px solid #59ab07;
+    position: absolute;
+    z-index: 999;
+    animation: animi 3s ease-in-out infinite;
+}
+
+.icon .icon-2{
+    transform: translateY(-15px) rotate(45deg);
+}
+
+@keyframes animi {
+    0%{
+        top: 0px;
+    }
+    50%{
+        top: 15px;
+
+    }
+    100%{
+        top: 0px;
+    }
+}

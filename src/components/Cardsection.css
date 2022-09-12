@@ -1,0 +1,123 @@
+
+.cardsection{
+    width: 100%;
+    min-width: 360px;
+    scroll-snap-type:y mandatory;
+}
+
+.cardsection::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
+
+.cardsection .section-cards{
+    display: flex;
+    padding: 50px 50px 160px;
+    flex-wrap: wrap;
+    justify-content: center;
+    scroll-snap-align:center;
+    scroll-snap-stop: always;
+    background-color: #fff;
+}
+
+.cardsection .section-cards:nth-child(even){
+    background-color: black;
+    color: #fff;
+    flex-direction: row-reverse;
+}
+
+.cardsection .section-cards h2{
+    width: 100%;
+    /* border: 1px solid red; */
+    text-align: center;
+    margin-bottom: 70px;
+    padding: 10px;
+    text-decoration: underline;
+}
+
+.cardsection .section-cards h2:nth-child(1),
+.cardsection .section-cards h2:nth-child(7),
+.cardsection .section-cards h2:nth-child(13),
+.cardsection .section-cards h2:nth-child(19)
+{
+    margin-top: -30px;
+    margin-bottom: 20px;
+}
+
+
+.cardsection .section-cards .cards-div{
+     /* border: 1px solid red; */
+    margin: 0 50px ;
+    padding: 150px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 14px!important;
+}
+.cardsection .section-cards .card-contain{
+    background-color: #fff
+}
+.cardsection .section-cards .cards-diving{
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    border-radius: 14px!important;
+    cursor: pointer;
+    background-size: cover;
+    color: #fff;
+    /* border: 1px solid red; */
+    margin: 40px 50px;
+    padding: 155px 0px 0;
+    transition: all 0.3s ease;
+    opacity: 0.9;
+}
+
+.cardsection .section-cards .cards-diving:hover{
+    opacity: 1;
+    margin: 20px 30px;
+    padding: 185px 0px 0;
+}
+.cardsection .section-cards .cards-diving h2{
+    width:100%;
+    text-align: center;
+    font-size: medium;
+    border-radius: 0 0 14px 14px;
+    background-color: var(--prim) ;
+    margin: 0;
+}
+
+
+.cardsection .section-cards .section_content{
+    width: 60%;
+    text-align: justify;
+    margin-top: 30px;
+    font-size: 90%;
+}
+
+.cardsection .section-cards .section_contenting{
+    width: 90%;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.cardsection .section-cards .card-contain{
+    margin-bottom: -160px;
+}
+
+
+@media only screen and (max-width: 1098px){
+    .cardsection .section-cards{
+        padding: 30px;
+    }
+
+    .cardsection .section-cards h2{
+        margin-bottom: 20px;
+    }
+    .cardsection .section-cards .section_content{
+        width: 100%;
+        text-align: justify;
+        margin-top: 25px;
+    }
+    
+}
+
+

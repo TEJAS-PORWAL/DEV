@@ -1,0 +1,208 @@
+.roadmap {
+    width: 100%;
+    height: 100%;
+    min-width: 360px;
+    overflow:hidden;
+    scroll-behavior: smooth;
+    background: url("../images/BG-roadmap.png");
+    background-repeat: no-repeat;
+    background-size: covernm start;
+    padding: 30px 30px ;
+}
+
+.roadmap  h3,
+.roadmap  h1{
+    margin: 0 auto;
+    color: #fff;
+    width: max-content;
+    /* position: absolute; */
+}
+.roadmap  h3{
+    top: 10%;
+    left: 32%;
+}
+
+.roadmap  h1{
+    top: 15%;
+    left: 42% ;
+}
+
+.roadmap .roadmap-nav {
+    /* border: 1px solid red; */
+    width: 400px;
+    min-width: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: sticky;
+    z-index: 9990;
+    margin-left: 20px;
+
+}
+
+.roadmap .roadmap-nav a {
+    /* border: 1px solid yellow; */
+    padding: 10px;
+    font-size: x-large;
+    font-weight: bolder;
+    color: rgb(99, 165, 0);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.roadmap .roadmap-nav a:hover {
+    color: #fff;
+}
+
+
+
+.roadmap .btn-div{
+    display: flex;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 65vh;
+}
+
+.roadmap .wrapper {
+    /* border: 1px solid yellow; */
+    width: 100%;
+    height: 80%;
+    display: flex;
+    overflow-y: hidden;
+    margin: 0 auto;
+    scroll-behavior: smooth;
+    align-items: baseline;
+    scroll-snap-type: x mandatory;
+}
+
+.roadmap .wrapper::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+.roadmap .wrapper .wrap-item {
+    /* border: 1px solid blue; */
+    min-width: 100%;
+    height: 100%;
+    color: #fff;
+    /* opacity: 0.2; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+    scroll-snap-destination: center;
+}
+
+.roadmap .wrapper .wrap-item .div-box {
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(255, 255, 255, 0.582); */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.roadmap .wrapper .wrap-item .div-box .card-box{
+    /* border: 1px solid rebeccapurple; */
+    min-width: 200px;
+    min-height: 200px;
+    width: min-content;
+    height: max-content;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    background-color: transparent;
+    color: transparent;
+    flex-direction: column-reverse;
+    transition: all 0.3s ease;
+    border-radius: 14px;
+    padding: 0 0 10px;
+    cursor: pointer;
+    z-index: 9;
+}
+
+.roadmap .wrapper .wrap-item .div-box .card-box:hover{
+    width: max-content;
+    background-color: rgba(0, 0, 0, 0.274);
+    color: #fff;
+    flex-direction: row;
+}
+
+.roadmap .wrapper .wrap-item .div-box .card-box span{
+    min-width: 15px;
+    min-height: 15px;
+    border-radius: 100%;
+    cursor: pointer;
+    background-color: #fff;
+    z-index: 99;
+}
+.roadmap .wrapper .wrap-item .div-box .card-box div{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 100%;
+    border-radius: 14px;
+    font-size: small;
+    background-color: inherit;
+    color: inherit;
+    position: relative;
+    bottom: 20px;
+}
+
+
+.roadmap .wrapper .wrap-item .div-box .card-box div h2 {
+    width: max-content;
+    position: relative;
+    left: 7px;
+}
+
+.roadmap .wrapper .wrap-item .div-box .card-box ul {
+    /* background-color: #fff; */
+    position: relative;
+    bottom: 15px;
+    padding: 0px 30px;
+    text-align: left;
+}
+
+.roadmap .scroll-btn {
+    padding: 4px 14px;
+    font-size: larger;
+    border: none;
+    border-radius: 50%;
+    background-color: rgb(0, 160, 0);
+    color: #fff;
+    margin: 0 60px;
+    cursor: pointer;
+    z-index: 99;
+}
+
+#right-btn {
+    left:90%;
+}
+
+#left-btn {
+    left: 3%;
+}
+
+#scale{
+    width: 100%;
+    height: 6px;
+    border-radius: 80px;
+    background-color: rgb(0, 255, 13);
+    margin-top: -50px;
+    /* z-index: 5000; */
+}
+
+/* #div-1 {
+    background-color: rgb(255, 0, 0);
+}
+
+#div-2 {
+    background-color: yellow;
+}
+
+#div-3 {
+    background-color: rgb(0, 162, 255);
+} */
